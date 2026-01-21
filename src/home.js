@@ -1,0 +1,30 @@
+const mainDiv = document.querySelector('.main-div');
+
+function createWelcomeMsg() {
+    const welcomeMsg = document.createElement('h2');
+    welcomeMsg.textContent = 'WELCOME TO HANOI DELIGHTS RESTAURANT';
+    welcomeMsg.classList.add('welcome-msg');
+    return welcomeMsg;
+}
+
+function createIntroMsg(){
+    const introMsg = document.createElement('p');
+    introMsg.textContent = 'Experience the authentic flavors of Hanoi with our traditional Vietnamese dishes, prepared with fresh, local ingredients.'
+    introMsg.classList.add('intro-msg');
+    return introMsg;
+}
+
+function createViewMenuBtn(){
+    const viewMenuBtn = document.createElement('button');
+    viewMenuBtn.textContent = 'View Menu';
+    viewMenuBtn.classList.add('viewMenu-btn');
+    return viewMenuBtn;
+}
+
+function loadHome() {
+    mainDiv.appendChild(createWelcomeMsg());
+    mainDiv.appendChild(createIntroMsg());
+    mainDiv.appendChild(createViewMenuBtn());
+}
+
+export default loadHome;
