@@ -1,5 +1,7 @@
 import './reset.css';
 import './style.css';
+import './contactPage.css'
+import 'leaflet/dist/leaflet.css'
 
 import loadHome from './home';
 import loadMenu from './menu';

@@ -1,3 +1,5 @@
+import L from 'leaflet';
+
 const mainDiv = document.querySelector('.main-div');
 
 function createAddressDiv() {
@@ -149,11 +151,44 @@ function createContactForm() {
 }
 
 function createMapDiv() {
-
+    const mapDiv = document.createElement('div');
+    mapDiv.id = 'map';
+    return mapDiv;
 }
 
+function initMap() {
+    const coord = [54.09486595700971, 13.380851433100913];
+    const map = L.map('map');
+    map.setView(coord, 14);
+    L.tileLayer(
+        'https://tile.openstreetmap.org/{z}/{x}/{y}.png', 
+        {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+    L.marker(coord).addTo(map);
+}
+
+// fix makrer icons for webpack
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
+
+delete L.Icon.Default.prototype._getIconUrl;
+
+L.Icon.Default.mergeOptions({
+  iconUrl: markerIcon,
+  iconRetinaUrl: markerIcon2x,
+  shadowUrl: markerShadow,
+});
+
 function loadContact(){
-    mainDiv.append(createInfoDiv(), createContactForm());
+    mainDiv.append(
+        createInfoDiv(), 
+        createContactForm(),
+        createMapDiv(),
+    );
+    initMap();
 }
 
 export default loadContact;
