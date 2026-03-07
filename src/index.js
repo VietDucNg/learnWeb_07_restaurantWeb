@@ -17,6 +17,8 @@ const pages = {
     contact: loadContact
 };
 
+loadHome();
+
 navBtns.forEach(btn => btn.addEventListener('click', (e)=> {
     const clickedBtn = e.currentTarget;
     const pageName = clickedBtn.dataset.page;

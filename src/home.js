@@ -22,6 +22,8 @@ function createViewMenuBtn(){
 }
 
 function loadHome() {
+    mainDiv.classList.remove(...mainDiv.classList);
+    mainDiv.classList.add('main-div','main-home');
     mainDiv.appendChild(createWelcomeMsg());
     mainDiv.appendChild(createIntroMsg());
     mainDiv.appendChild(createViewMenuBtn());

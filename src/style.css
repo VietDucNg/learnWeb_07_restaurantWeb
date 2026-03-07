@@ -1,8 +1,11 @@
 :root {
   --font-size-base: clamp(14px, 0.4vw + 1rem, 18px);
-  --font-color: #222;
+  --font-color: #e4e3cd;
+  --header-background-color: rgba(66, 55, 39, 0.8);
+  --header-color: #fefce3;
   --space: 1lh;
   --font-family-base: system-ui, "Segoe UI", Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans",  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol","Noto Color Emoji";
+
 }
 
 .grid-column {
@@ -35,6 +38,18 @@ body {
   padding: 0;
   font-family: var(--font-family-base);
   color: var(--font-color);
+
+  background-image:
+    radial-gradient(circle at 50% 50%,
+      rgba(0,0,0,0.3) 0%,
+      rgba(0,0,0,0.6) 50%,
+      rgba(0,0,0,0.9) 100%
+    ),
+    url("img/background.jpg");
+
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -76,5 +91,41 @@ article {
 }
 
 * {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+
+button {
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+header {
+  padding: 1em 0;
+  background: var(--header-background-color);
+  backdrop-filter: blur(6px);
+}
+
+header h1 {
+  color: var(--header-color);
+}
+
+header button {
+  color: #fefce3;
+  background: none;
+  padding: 0;
+}
+
+header button.active {
+  border-bottom: 5px solid rgb(181, 136, 73);
+}
+
+footer {
+  align-self: center;
 }
