@@ -1,4 +1,8 @@
+import loadMenu from './menu';
+
 const mainDiv = document.querySelector('.main-div');
+const navBtns = document.querySelectorAll('.nav-btn');
+const menuBtn = document.querySelector('.menu-btn');
 
 function createWelcomeMsg() {
     const welcomeMsg = document.createElement('h2');
@@ -14,10 +18,18 @@ function createIntroMsg(){
     return introMsg;
 }
 
+function handelViewMenuBtnClick() {
+    navBtns.forEach(btn => btn.classList.remove('active'));
+    menuBtn.classList.add('active');
+    mainDiv.innerHTML = '';
+    loadMenu();
+}
+
 function createViewMenuBtn(){
     const viewMenuBtn = document.createElement('button');
     viewMenuBtn.textContent = 'View Menu';
     viewMenuBtn.classList.add('viewMenu-btn');
+    viewMenuBtn.addEventListener('click',handelViewMenuBtnClick);
     return viewMenuBtn;
 }
 
