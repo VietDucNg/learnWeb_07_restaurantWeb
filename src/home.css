@@ -26,7 +26,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    padding-left: 10%;
     gap: 20px;
 }
 

@@ -1,0 +1,26 @@
+.main-contact { 
+    flex: 1; 
+    display: grid; 
+    align-content: center; 
+    grid-template-rows: repeat(2, min-content); 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem; 
+} 
+    
+.address-div { 
+    grid-area: 1/1/2/2; 
+} 
+
+.contact-form { 
+    grid-area: 2/1/3/2; 
+} 
+
+#map { 
+    grid-row: span 2; 
+}
+
+#map {
+    min-height: 250px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}

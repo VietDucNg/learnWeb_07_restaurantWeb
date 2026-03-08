@@ -183,6 +183,8 @@ L.Icon.Default.mergeOptions({
 });
 
 function loadContact(){
+    mainDiv.classList.remove(...mainDiv.classList);
+    mainDiv.classList.add('main-div','main-contact');
     mainDiv.append(
         createInfoDiv(), 
         createContactForm(),
