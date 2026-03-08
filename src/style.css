@@ -111,13 +111,23 @@ button:active {
 }
 
 header {
+  position: sticky;
+  justify-content: center;
+  top: 0;
   padding: 1em 0;
   background: var(--header-background-color);
   backdrop-filter: blur(6px);
 }
 
 header h1 {
+  flex: 1;
+  text-align: center;
   color: var(--header-color);
+}
+
+nav {
+    width: 250px;
+    justify-content: space-evenly;
 }
 
 header button {
