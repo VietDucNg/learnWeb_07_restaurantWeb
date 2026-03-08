@@ -2,6 +2,7 @@
   --font-size-base: clamp(14px, 0.4vw + 1rem, 18px);
   --font-color: #e4e3cd;
   --header-background-color: rgba(66, 55, 39, 0.8);
+  --header-background-hover-color: rgba(87, 71, 48, 0.8);
   --header-color: #fefce3;
   --space: 1lh;
   --font-family-base: system-ui, "Segoe UI", Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans",  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol","Noto Color Emoji";
@@ -117,6 +118,7 @@ header {
   padding: 1em 0;
   background: var(--header-background-color);
   backdrop-filter: blur(6px);
+  gap: 1rem;
 }
 
 header h1 {
@@ -126,11 +128,12 @@ header h1 {
 }
 
 nav {
-    width: 250px;
+    width: 300px;
     justify-content: space-evenly;
 }
 
 header button {
+  font-size: 1.2rem;
   color: #fefce3;
   background: none;
   padding: 0;

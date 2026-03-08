@@ -1,6 +1,7 @@
 import './reset.css';
 import './style.css';
 import './home.css';
+import './menu.css';
 import './contact.css';
 import 'leaflet/dist/leaflet.css';
 

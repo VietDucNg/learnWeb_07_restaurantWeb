@@ -1,0 +1,63 @@
+.main-menu {
+    display: grid;
+    padding: 5% 10%;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 1rem 5rem;
+}
+
+.item-div {
+    background-color: var(--header-background-color);
+    border-radius: 20px;
+    padding: 1rem;
+    transition: all 0.1s ease-in-out;
+}
+
+.item-div:hover {
+    cursor: pointer;
+    background-color: var(--header-background-hover-color);
+    transform: translateY(-2px) scale(1.02);
+}
+
+.item-name {
+    font-size: 1.2rem;
+}
+
+.item-name, .item-name-vn{
+    font-weight: bold;
+}
+
+.item-price {
+    color: var(--welcome-msg-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.item-div {
+    display: grid;
+    grid-template-rows: repeat(4, min-content);
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.item-name {
+    grid-area: 1/1/2/3;
+}
+
+.item-name-vn {
+    grid-area: 2/1/3/4;
+}
+
+.item-price {
+    justify-self: end;
+    grid-area: 1/3/2/4;
+}
+
+.item-img {
+    grid-area: 3/1/4/4;
+    border-radius: 10px;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.item-intro {
+    grid-area: 4/1/5/4;
+}

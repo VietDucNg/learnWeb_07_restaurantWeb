@@ -31,7 +31,7 @@ const menuItemArr = [
     ),
 
     new ItemObj(
-        'Grilled Pork with Vermicelli',
+        'Grilled-Pork Noodles',
         '(Bún Chả)', 
         'Grilled pork served with rice vermicelli, fresh herbs, and dipping sauce - a true specialty of Hanoi.',
         '18€',
@@ -39,7 +39,7 @@ const menuItemArr = [
     ),
 
     new ItemObj(
-        'Hanoi Turmeric Fish with Dill',
+        'Hanoi Grilled Fish',
         '(Chả Cá Lã Vọng)',
         'Pan-fried turmeric fish with dill and spring onions, served sizzling with noodles and dipping sauce.',
         '25€',
@@ -63,7 +63,7 @@ const menuItemArr = [
     ),
 
     new ItemObj(
-        'Spicy Beef Noodle Soup',
+        'Hue Beef Noodle',
         '(Bún Bò Huế )',
         'A bold and spicy beef noodle soup from central Vietnam, rich with lemongrass and chili aromas.',
         '20€',
@@ -71,7 +71,7 @@ const menuItemArr = [
     ),
 
     new ItemObj(
-        'Quang-Style Turmeric Noodles',
+        'Quang Noodles',
         '(Mì Quảng)',
         'Turmeric-tinted noodles topped with pork, shrimp, herbs, and crunchy rice crackers, lightly served with broth.',
         '18€',
@@ -79,14 +79,14 @@ const menuItemArr = [
     ),
     
     new ItemObj(
-        'Vietnamese Crispy Pancake',
+        'Crispy Pancake',
         '(Bánh Xèo)',
         'A crispy rice pancake filled with pork, shrimp, and bean sprouts, wrapped in herbs and dipped in sauce.',
         '15€',
         banhXeoImg,
     ),
     
-    new ItemObj('Broken Rice with Grilled Pork',
+    new ItemObj('Broken Rice',
         '(Cơm Tấm)',
         'Broken rice served with grilled pork, egg, pickles, and fish sauce — a beloved southern Vietnamese classic.',
         '15€',
@@ -94,7 +94,7 @@ const menuItemArr = [
     ),
     
     new ItemObj(
-        'Green Papaya Salad',
+        'Papaya Salad',
         '(Gỏi đu đủ)',
         'A refreshing mix of shredded green papaya, herbs, peanuts, and lime, balancing sweet, sour, and spicy flavors.',
         '12€',
