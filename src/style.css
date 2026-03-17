@@ -119,6 +119,7 @@ header {
   background: var(--header-background-color);
   backdrop-filter: blur(6px);
   gap: 1rem;
+  z-index: 1000;
 }
 
 header h1 {
